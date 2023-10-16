@@ -1,0 +1,190 @@
+extends ../template/basic
+block content
+  header.py-6
+    div.flex.justify-between.items-center.container.mx-auto.px-4
+      div.flex.items-center.gap-4
+        button(type='button')#button-navigation
+          img(src="/img/home/menu.svg", alt="menu icon", class="w-8")
+        p.text-2xl.font-semibold Home
+      nav(class="fixed left-0 top-0 bottom-0 w-full backdrop-blur z-50 hidden")#navigation
+        ul(class="bg-white w-4/5 h-full px-4 pt-6")
+          button#button-close.flex.items-center.gap-2
+            img(src="img/home/close-icon.svg", alt="close icon")
+            p close
+      div.flex.items-center.gap-4
+        img(src="/img/home/plus-icon.svg", alt="plus icon")
+        img(src="/img/home/search-icon.svg", alt="search icon")
+        img(src="/img/home/notification-icon.svg", alt="notification icon")
+  
+  section.px-4
+    div(class="rounded-xl overflow-hidden relative")  
+      img(src="/img/home/desktop-small-480-270.webp", alt="desktop banner")
+      div(class="absolute bg-[#ffffffa4] w-3/6 right-0 top-5 bottom-5 rounded-l-xl p-2 backdrop-blur-sm")
+        p.font-bold.text-2xl Carry your Funk
+        p(class="text-sm") Lorem ipsum dolor, sit amet consectetur adipisicing.
+  
+  section.px-4.py-6.space-y-2
+    p.text-xl.font-semibold Top Categories
+    div(class="flex gap-5 text-center")
+
+      div(class="overflow-hidden w-16")
+        div.h-16.w-16.rounded-md.animation-skeleton
+        p(class="text-ellipsis overflow-hidden text-center px-2") desk
+
+      div(class="overflow-hidden w-16")
+        div.h-16.w-16.rounded-md.bg-gray-200
+        p(class="text-ellipsis overflow-hidden text-center px-2") laptop
+
+      div(class="overflow-hidden w-16")
+        div.h-16.w-16.rounded-md.bg-gray-200
+        p(class="text-ellipsis overflow-hidden text-center px-2") phone
+
+  section.px-4.pb-6.space-y-2
+    div(class="flex justify-between items-center")
+      p.text-xl.font-semibold New Products
+      p.flex.items-center View All
+        img(src="img/home/arrow-right.svg", alt="arrow right icon")
+    div.flex.overflow-hidden.gap-4
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.
+
+  section.px-4.pb-6.space-y-2
+    div(class="flex justify-between items-center")
+      p.text-xl.font-semibold Computers
+      p.flex.items-center View All
+        img(src="img/home/arrow-right.svg", alt="arrow right icon")
+    div.flex.overflow-hidden.gap-4
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.
+  
+  section.px-4.pb-6.space-y-2
+    div(class="flex justify-between items-center")
+      p.text-xl.font-semibold Laptops
+      p.flex.items-center View All
+        img(src="img/home/arrow-right.svg", alt="arrow right icon")
+    div.flex.overflow-hidden.gap-4
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.
+  
+  section.px-4.pb-6.space-y-2
+    div(class="flex justify-between items-center")
+      p.text-xl.font-semibold Phone
+      p.flex.items-center View All
+        img(src="img/home/arrow-right.svg", alt="arrow right icon")
+    div.flex.overflow-hidden.gap-4
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.49
+      div.w-32.overflow-hidden.shrink-0
+        div.w-32.h-32.animation-skeleton 
+        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
+        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
+        p.font-bold.text-sm $39.
+
+  section.px-4.pb-6.space-y-2
+    p.text-xl.font-semibold Nustras Marcas
+    ul(class="grid grid-cols-3 gap-4 w-full h-48") 
+      li.rounded-lg.bg-gray-200
+        div.h-full.w-full
+      li.rounded-lg.bg-gray-200
+        div.h-full.w-full
+      li.rounded-lg.bg-gray-200
+        div.h-full.w-full
+      li.rounded-lg.bg-gray-200
+        div.h-full.w-full
+      li.rounded-lg.bg-gray-200
+        div.h-full.w-full
+      li.rounded-lg.bg-gray-200
+        div.h-full.w-full
+  
+  section.px-4.pb-6.space-y-2
+    p.text-xl.font-semibold Our Store
+    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d898.4130914784452!2d-77.03914189588534!3d-12.053243649812295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9a9a194b201%3A0x2dbc87a3737118d0!2sMi%20PC%20Lista%20-%20Todo%20en%20Computadoras%20y%20Laptops!5e0!3m2!1ses!2spe!4v1697379441738!5m2!1ses!2spe' width='400' height='300' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade' class="w-full")
+  
+  section.px-4.pb-6.space-y-2
+    p.text-xl.font-semibold Contact me
+    form(action="", class="w-full space-y-4") 
+      div
+        label(for="name" class="block mb-1 text-sm font-medium text-gray-900") Name
+        input(type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5", autocomplete="off")
+      div
+        label(for="default-input" class="block mb-1 text-sm font-medium text-gray-900") Correo
+        input(type="text" id="default-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5")
+      div        
+        label(for="message" class="block mb-1 text-sm font-medium text-gray-900") Your message
+        textarea(id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write your thoughts here...")
+      button.px-5.py-3.text-base.font-medium.text-center.inline-flex.items-center.text-white.bg-blue-700.rounded-lg(type='submit' class='hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300')
+        svg.w-4.h-4.text-white.mr-2(aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewbox='0 0 20 16')
+          path(d='m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z')
+          path(d='M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z')
+        | Send
+block script
+  script(src="js/menu.js")
+
+
+
+  //- .sticky.bottom-0.left-0.z-50.w-full.h-16.bg-white.border-t.border-gray-200(class='dark:bg-gray-700 dark:border-gray-600')
+  //-   .grid.h-full.max-w-lg.grid-cols-3.mx-auto
+  //-     button.inline-flex.flex-col.items-center.justify-center.font-medium.px-5.group(type='button' class='hover:bg-gray-50 dark:hover:bg-gray-800')
+  //-       svg.w-5.h-5.mb-1.text-gray-500(class='dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewbox='0 0 20 20')
+  //-         path(d='M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm3.982 13.982a1 1 0 0 1-1.414 0l-3.274-3.274A1.012 1.012 0 0 1 9 10V6a1 1 0 0 1 2 0v3.586l2.982 2.982a1 1 0 0 1 0 1.414Z')
+  //-       span.text-sm.text-gray-500(class='dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500') Latest
+  //-     button.inline-flex.flex-col.items-center.justify-center.font-medium.px-5.group(type='button' class='hover:bg-gray-50 dark:hover:bg-gray-800')
+  //-       svg.w-5.h-5.mb-1.text-gray-500(class='dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewbox='0 0 20 19')
+  //-         path(d='M14.5 0A3.987 3.987 0 0 0 11 2.1a4.977 4.977 0 0 1 3.9 5.858A3.989 3.989 0 0 0 14.5 0ZM9 13h2a4 4 0 0 1 4 4v2H5v-2a4 4 0 0 1 4-4Z')
+  //-         path(d='M5 19h10v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2ZM5 7a5.008 5.008 0 0 1 4-4.9 3.988 3.988 0 1 0-3.9 5.859A4.974 4.974 0 0 1 5 7Zm5 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm5-1h-.424a5.016 5.016 0 0 1-1.942 2.232A6.007 6.007 0 0 1 17 17h2a1 1 0 0 0 1-1v-2a5.006 5.006 0 0 0-5-5ZM5.424 9H5a5.006 5.006 0 0 0-5 5v2a1 1 0 0 0 1 1h2a6.007 6.007 0 0 1 4.366-5.768A5.016 5.016 0 0 1 5.424 9Z')
+  //-       span.text-sm.text-gray-500(class='dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500') Following
+  //-     button.inline-flex.flex-col.items-center.justify-center.font-medium.px-5.group(type='button' class='hover:bg-gray-50 dark:hover:bg-gray-800')
+  //-       svg.w-6.h-6.mb-1.text-gray-500(class='dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewbox='0 0 22 20')
+  //-         path(d='M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z')
+  //-       span.text-sm.text-gray-500(class='dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500') Favorites
+
+
+
+  

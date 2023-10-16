@@ -1,0 +1,4 @@
+tailwind.config.js
+postcss.config.js
+node_modules
+flowbite.min.js

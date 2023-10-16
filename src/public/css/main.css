@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation-skeleton {
+  animation: skeleton 1s forwards infinite linear alternate;
+  @apply rounded-md;
+}
+
+@keyframes skeleton {
+  0% {
+    background-color: #e4e4e4;
+  }
+
+  100% {
+    background-color: #cacaca;
+  }
+}
