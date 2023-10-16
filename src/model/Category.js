@@ -10,7 +10,7 @@ const Category = db.define('category', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  img: {
+  image: {
     type: DataTypes.STRING,
     allowNull: false
   }
