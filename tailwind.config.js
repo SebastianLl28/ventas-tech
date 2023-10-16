@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/**/*.{html,pug}", "./node_modules/flowbite/**/*.js"],
+  content: ["./src/**/*.{html,pug,js}", "./node_modules/flowbite/**/*.js"],
   theme: {
     extend: {},
   },
