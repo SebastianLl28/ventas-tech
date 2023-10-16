@@ -5,6 +5,7 @@ import 'dotenv/config'
 async function initDb () {
   try {
     await db.authenticate()
+    await db.sync()
     console.log('Database connected')
   } catch (error) {
     throw new Error(error)
