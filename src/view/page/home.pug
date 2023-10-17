@@ -18,8 +18,45 @@ block content
         img(src="/img/home/plus-icon.svg", alt="plus icon")
         img(src="/img/home/search-icon.svg", alt="search icon")
         img(src="/img/home/notification-icon.svg", alt="notification icon")
-  
-  section.px-4
+
+  //- section.splide.w-full.container.px-5(aria-labelledby='carousel-heading')
+    h2#carousel-heading Basic Structure Example
+    .splide__track
+      ul.splide__list
+        li.splide__slide.bg-red-400.w-32 Slide 01
+        li.splide__slide.bg-red-400.w-32 Slide 02
+        li.splide__slide.bg-red-400.w-32 Slide 03
+        li.splide__slide.bg-red-400.w-32 Slide 05
+        li.splide__slide.bg-red-400.w-32 Slide 06
+
+
+  //- .splide-new-banner
+  section.px-4.splide.splide-new-banner(aria-labelledby='carousel-heading')
+    .splide__track
+      ul.rounded-xl.relative.splide__list
+        li(class="rounded-xl overflow-hidden relative w-full splide__slide")  
+          img(src="/img/home/desktop-small-480-270.webp", alt="desktop banner")
+          div(class="absolute bg-[#ffffffa4] w-3/6 right-0 top-5 bottom-5 rounded-l-xl p-2 backdrop-blur-sm")
+            p.font-bold.text-2xl Carry your Funk
+            p(class="text-sm") Lorem ipsum dolor, sit amet consectetur adipisicing.
+        li(class="rounded-xl overflow-hidden relative w-full splide__slide")  
+          img(src="/img/home/desktop-small-480-270.webp", alt="desktop banner")
+          div(class="absolute bg-[#ffffffa4] w-3/6 right-0 top-5 bottom-5 rounded-l-xl p-2 backdrop-blur-sm")
+            p.font-bold.text-2xl Carry your Funkx
+            p(class="text-sm") Lorem ipsum dolor, sit amet consectetur adipisicing.
+        li(class="rounded-xl overflow-hidden relative w-full splide__slide")  
+          img(src="/img/home/desktop-small-480-270.webp", alt="desktop banner")
+          div(class="absolute bg-[#ffffffa4] w-3/6 right-0 top-5 bottom-5 rounded-l-xl p-2 backdrop-blur-sm")
+            p.font-bold.text-2xl Carry your Funkx
+            p(class="text-sm") Lorem ipsum dolor, sit amet consectetur adipisicing.
+        li(class="rounded-xl overflow-hidden relative w-full splide__slide")  
+          img(src="/img/home/desktop-small-480-270.webp", alt="desktop banner")
+          div(class="absolute bg-[#ffffffa4] w-3/6 right-0 top-5 bottom-5 rounded-l-xl p-2 backdrop-blur-sm")
+            p.font-bold.text-2xl Carry your Funkx
+            p(class="text-sm") Lorem ipsum dolor, sit amet consectetur adipisicing.
+      
+
+  //- section.px-4
     div(class="rounded-xl overflow-hidden relative")  
       img(src="/img/home/desktop-small-480-270.webp", alt="desktop banner")
       div(class="absolute bg-[#ffffffa4] w-3/6 right-0 top-5 bottom-5 rounded-l-xl p-2 backdrop-blur-sm")
@@ -27,37 +64,30 @@ block content
         p(class="text-sm") Lorem ipsum dolor, sit amet consectetur adipisicing.
 
 
-  section.px-4.py-6.space-y-2.splide(aria-labelledby='carousel-heading')
+  section.px-4.py-6.space-y-2.splide.splide-categories(aria-labelledby='carousel-heading')
     p.text-xl.font-semibold Top Categories
     .splide__track
-      ul(class="flex text-center splide__list")#categories_data
+      ul(class="flex text-center splide__list")
         each category in categories
           li(class="w-14 splide__slide")
             div.h-14.w-14.rounded-md.bg-gray-100.flex.items-center.justify-center.py-2
               img(src=category.image alt="${category.name}" class="h-12 bg-cover object-cover")
             p.text-ellipsis.overflow-hidden.text-center.px-2.text-xs=category.name
 
-  section.px-4.pb-6.space-y-2
+  section.px-4.pb-6.space-y-2.splide.splide-new-products(aria-labelledby='carousel-heading')
     div(class="flex justify-between items-center")
       p.text-xl.font-semibold New Products
       p.flex.items-center View All
         img(src="img/home/arrow-right.svg", alt="arrow right icon")
-    div.flex.overflow-hidden.gap-4
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.49
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.49
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.
+    .splide__track
+      ul.splide__list
+        each product in products
+          li.w-32.overflow-hidden.shrink-0.splide__slide
+            div.w-32.h-32.animation-skeleton
+              img(src=product.image, alt="")
+            p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap=product.name
+            p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3")=product.description
+            p.font-bold.text-sm=product.price
 
   section.px-4.pb-6.space-y-2
     div(class="flex justify-between items-center")
