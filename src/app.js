@@ -1,6 +1,6 @@
 import express from 'express'
 // import morgan from 'morgan'
-import { homeRouter, categoryRouter } from './route/index.js'
+import { homeRouter, categoryRouter, productRouter } from './route/index.js'
 import cors from 'cors'
 
 const app = express()
@@ -20,5 +20,6 @@ app.use(express.static('src/public'))
 // app.use(morgan('dev'))
 app.use('/', homeRouter)
 app.use('/api/category', categoryRouter)
+app.use('/api/product', productRouter)
 
 export default app
