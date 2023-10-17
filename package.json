@@ -10,6 +10,7 @@
     "dev": "browser-sync start --config bs-config.cjs --proxy localhost:8001 --files 'src/**/*'",
     "style": "postcss src/public/css/main.css -o src/public/css/index.css --watch",
     "start-mysql": "sh start_mysql.sh",
+    "create-mudule": "sh create_module.sh",
     "start": "concurrently \"npm:server\" \"npm:style\" \"npm:dev\"",
     "db:importar": "node src/seed/seeder.js -i"
   },
