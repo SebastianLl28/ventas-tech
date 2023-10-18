@@ -1,4 +1,4 @@
-import Product from '../model/Product.js'
+import { Product } from '../model/index.js'
 
 export const findAllProducts = async (query = {}) => {
   try {
