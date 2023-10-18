@@ -82,60 +82,67 @@ block content
     .splide__track
       ul.splide__list
         each product in products
-          li.w-32.overflow-hidden.shrink-0.splide__slide
-            div.w-32.h-32.animation-skeleton
-              img(src=product.image, alt="")
-            p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap=product.name
-            p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3")=product.description
-            p.font-bold.text-sm=product.price
-
-  section.px-4.pb-6.space-y-2
+          li.w-32.overflow-hidden.shrink-0.splide__slide.bg-gray-100.rounded
+            div
+              img(src=product.image, alt="", class="object-cover h-32 w-32")
+            div.p-1
+              p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap=product.name
+              p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3")=product.description
+              p.font-bold.text-sm $#{product.price}
+  
+  section.px-4.pb-6.space-y-2.splide.splide-computers(aria-labelledby='carousel-heading')
     div(class="flex justify-between items-center")
       p.text-xl.font-semibold Computers
       p.flex.items-center View All
         img(src="img/home/arrow-right.svg", alt="arrow right icon")
-    div.flex.overflow-hidden.gap-4
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.49
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.49
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.
+    .splide__track
+      ul.splide__list
+        each desk in desks
+          li.w-32.overflow-hidden.shrink-0.splide__slide.bg-gray-100.rounded
+            div
+              img(src=desk.image, alt="", class="object-cover h-32 w-32")
+            div.p-1
+              p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap=desk.name
+              p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3")=desk.description
+              p.font-bold.text-sm $#{desk.price}
+
   
-  section.px-4.pb-6.space-y-2
+  section.px-4.pb-6.space-y-2.splide.splide-laptops(aria-labelledby='carousel-heading')
     div(class="flex justify-between items-center")
       p.text-xl.font-semibold Laptops
       p.flex.items-center View All
         img(src="img/home/arrow-right.svg", alt="arrow right icon")
-    div.flex.overflow-hidden.gap-4
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.49
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.49
-      div.w-32.overflow-hidden.shrink-0
-        div.w-32.h-32.animation-skeleton 
-        p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap Computadora
-        p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3") Blossom Pouch
-        p.font-bold.text-sm $39.
-  
-  section.px-4.pb-6.space-y-2
+    .splide__track
+      ul.splide__list
+        each laptop in laptops
+          li.w-32.overflow-hidden.shrink-0.splide__slide.bg-gray-100.rounded
+            div
+              img(src=laptop.image, alt="", class="object-cover h-32 w-32")
+            div.p-1
+              p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap=laptop.name
+              p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3")=laptop.description
+              p.font-bold.text-sm $#{laptop.price}
+
+  section.px-4.pb-6.space-y-2.splide.splide-phone(aria-labelledby='carousel-heading')
     div(class="flex justify-between items-center")
       p.text-xl.font-semibold Phone
+      p.flex.items-center View All
+        img(src="img/home/arrow-right.svg", alt="arrow right icon")
+    .splide__track
+      ul.splide__list
+        each phone in phons
+          li.w-32.overflow-hidden.shrink-0.splide__slide.bg-gray-100.rounded
+            div
+              img(src=phone.image, alt="", class="object-cover h-32 w-32")
+            div.p-1
+              p.font-semibold.text-lg.text-ellipsis.overflow-hidden.whitespace-nowrap=phone.name
+              p.text-ellipsis.overflow-hidden.whitespace-nowrap.text-sm(class="leading-3")=phone.description
+              p.font-bold.text-sm $#{phone.price}
+
+
+  //- section.px-4.pb-6.space-y-2
+    div(class="flex justify-between items-center")
+      p.text-xl.font-semibold Computers
       p.flex.items-center View All
         img(src="img/home/arrow-right.svg", alt="arrow right icon")
     div.flex.overflow-hidden.gap-4
